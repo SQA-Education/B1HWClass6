@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>B1 Session 6: Open-Air Markets</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',sans-serif;background:#5B5091;min-height:100vh;padding:20px}.container{max-width:800px;margin:0 auto}.header{background:#fff;border-radius:20px;padding:30px;margin-bottom:20px;text-align:center}.header h1{color:#5B5091;font-size:1.4em}.header p{color:#888}.badge{background:#F5A623;color:#fff;padding:4px 12px;border-radius:20px;font-size:.8em}.card{background:#fff;border-radius:16px;padding:25px;margin-bottom:20px}.card h2{color:#5B5091;margin-bottom:15px}label{font-weight:600;color:#333;display:block;margin-bottom:8px}input[type="text"]{width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px}.btn{background:#5B5091;color:#fff;border:none;padding:14px 32px;border-radius:12px;font-size:16px;font-weight:600;cursor:pointer;width:100%;margin-top:10px}.btn:hover{background:#4a4080}.btn-orange{background:#F5A623}.section{display:none}.section.active{display:block}.reading-box{background:#f8f9fa;border-radius:12px;padding:20px;margin-bottom:20px;border-left:4px solid #5B5091;line-height:1.7}.question{background:#f8f9fa;border-radius:12px;padding:20px;margin:15px 0;border:1px solid #eee}.question h4{margin-bottom:15px;color:#333}.option{padding:14px;border:2px solid #e0e0e0;border-radius:10px;cursor:pointer;margin-bottom:10px;display:flex;align-items:center;gap:12px}.option:hover{border-color:#5B5091;background:#f8f6ff}.option.selected{border-color:#5B5091;background:#f0edff}.option.correct{border-color:#22c55e;background:#f0fdf4}.option.incorrect{border-color:#ef4444;background:#fef2f2}.circle{width:20px;height:20px;border:2px solid #ccc;border-radius:50%;flex-shrink:0}.option.selected .circle{border-color:#5B5091;background:#5B5091}textarea{width:100%;min-height:120px;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;font-family:inherit}textarea:focus{outline:none;border-color:#5B5091}.progress{height:8px;background:#e0e0e0;border-radius:4px;margin-bottom:20px}.progress-bar{height:100%;background:#F5A623;border-radius:4px}.score-card{background:linear-gradient(135deg,#5B5091,#7B6DB5);border-radius:20px;padding:35px;color:#fff;text-align:center}.score-big{font-size:4em;font-weight:700}.scores{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}.scores>div{background:rgba(255,255,255,.15);border-radius:12px;padding:12px}.scores label{font-size:.75em;opacity:.9}.scores span{font-size:1.4em;font-weight:700;display:block}.fill-input{width:120px;border:none;border-bottom:2px solid #5B5091;text-align:center;font-size:16px;padding:5px;background:transparent}.fill-input:focus{outline:none}.record-btn{width:80px;height:80px;border-radius:50%;background:#fff;border:3px solid #5B5091;cursor:pointer;margin:20px auto;display:flex;align-items:center;justify-content:center}.record-btn.recording{border-color:#ef4444;animation:pulse 1.5s infinite}.record-dot{width:24px;height:24px;background:#5B5091;border-radius:50%}.record-btn.recording .record-dot{background:#ef4444;border-radius:4px;width:20px;height:20px}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.4)}50%{box-shadow:0 0 0 15px rgba(239,68,68,0)}}.timer{text-align:center;font-size:28px;font-weight:700;color:#5B5091}.status{text-align:center;color:#666;margin-top:10px}audio{width:100%;margin-top:15px}.hidden{display:none}.feedback{background:#f8f6ff;border:1px solid #5B5091;border-radius:12px;padding:20px;margin-top:15px}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',sans-serif;background:#5B5091;min-height:100vh;padding:20px}.container{max-width:800px;margin:0 auto}.header{background:#fff;border-radius:20px;padding:30px;margin-bottom:20px;text-align:center}.header h1{color:#5B5091;font-size:1.4em}.header p{color:#888}.badge{background:#F5A623;color:#fff;padding:4px 12px;border-radius:20px;font-size:.8em}.level-badge{background:#5B5091;color:#fff;padding:6px 16px;border-radius:20px;font-size:.9em;display:inline-block;margin-bottom:10px;font-weight:600}.card{background:#fff;border-radius:16px;padding:25px;margin-bottom:20px}.card h2{color:#5B5091;margin-bottom:15px}label{font-weight:600;color:#333;display:block;margin-bottom:8px}input[type="text"]{width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px}.btn{background:#5B5091;color:#fff;border:none;padding:14px 32px;border-radius:12px;font-size:16px;font-weight:600;cursor:pointer;width:100%;margin-top:10px}.btn:hover{background:#4a4080}.btn-orange{background:#F5A623}.section{display:none}.section.active{display:block}.reading-box{background:#f8f9fa;border-radius:12px;padding:20px;margin-bottom:20px;border-left:4px solid #5B5091;line-height:1.7}.question{background:#f8f9fa;border-radius:12px;padding:20px;margin:15px 0;border:1px solid #eee}.question h4{margin-bottom:15px;color:#333}.option{padding:14px;border:2px solid #e0e0e0;border-radius:10px;cursor:pointer;margin-bottom:10px;display:flex;align-items:center;gap:12px}.option:hover{border-color:#5B5091;background:#f8f6ff}.option.selected{border-color:#5B5091;background:#f0edff}.option.correct{border-color:#22c55e;background:#f0fdf4}.option.incorrect{border-color:#ef4444;background:#fef2f2}.circle{width:20px;height:20px;border:2px solid #ccc;border-radius:50%;flex-shrink:0}.option.selected .circle{border-color:#5B5091;background:#5B5091}textarea{width:100%;min-height:120px;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;font-family:inherit}textarea:focus{outline:none;border-color:#5B5091}.progress{height:8px;background:#e0e0e0;border-radius:4px;margin-bottom:20px}.progress-bar{height:100%;background:#F5A623;border-radius:4px}.score-card{background:linear-gradient(135deg,#5B5091,#7B6DB5);border-radius:20px;padding:35px;color:#fff;text-align:center}.score-big{font-size:4em;font-weight:700}.scores{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}.scores>div{background:rgba(255,255,255,.15);border-radius:12px;padding:12px}.scores label{font-size:.75em;opacity:.9}.scores span{font-size:1.4em;font-weight:700;display:block}.fill-input{width:120px;border:none;border-bottom:2px solid #5B5091;text-align:center;font-size:16px;padding:5px;background:transparent}.fill-input:focus{outline:none}.record-btn{width:80px;height:80px;border-radius:50%;background:#fff;border:3px solid #5B5091;cursor:pointer;margin:20px auto;display:flex;align-items:center;justify-content:center}.record-btn.recording{border-color:#ef4444;animation:pulse 1.5s infinite}.record-dot{width:24px;height:24px;background:#5B5091;border-radius:50%}.record-btn.recording .record-dot{background:#ef4444;border-radius:4px;width:20px;height:20px}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.4)}50%{box-shadow:0 0 0 15px rgba(239,68,68,0)}}.timer{text-align:center;font-size:28px;font-weight:700;color:#5B5091}.status{text-align:center;color:#666;margin-top:10px}audio{width:100%;margin-top:15px}.hidden{display:none}.feedback{background:#f8f6ff;border:1px solid #5B5091;border-radius:12px;padding:20px;margin-top:15px}
 
-/* NEW STYLES FOR IMPROVED SUBMISSION */
 .not-submitted-warning{
   background:#fef2f2;
   border:3px solid #ef4444;
@@ -75,36 +74,17 @@
 .submitted-success p{
   color:#666;
 }
-.name-input-final{
-  background:#f8f9fa;
-  border-radius:12px;
-  padding:20px;
-  margin-bottom:20px;
-}
-.name-input-final label{
-  font-size:1.1em;
-  color:#5B5091;
-}
-.name-input-final input{
-  border:2px solid #5B5091;
-}
 
 @media(max-width:600px){.scores{grid-template-columns:repeat(3,1fr)}.btn-submit-big{font-size:18px;padding:20px}}
 </style>
 </head>
 <body>
 <div class="container">
-<div class="header"><h1>Session 6: Open-Air Markets <span class="badge">Quiz</span></h1><p>Week 3 • Bargaining Expressions</p></div>
+<div class="header"><div class="level-badge">CEFR Level B1 - Intermediate</div><h1>B1 Session 6: Open-Air Markets <span class="badge">Quiz</span></h1><p>Week 3 • Bargaining Expressions</p></div>
 
-<!-- REMOVED NAME INPUT - Goes directly to Section 1 -->
 <div class="section active" id="start">
 <div class="card"><label>Your Full Name</label><input type="text" id="studentName" placeholder="Enter your name...">
-<label>Your Teacher</label>
-<select id="teacherName" style="width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px" onchange="updateClasses()">
-  <option value="">Select your teacher...</option>
-  <option value="Laura Ebel">Laura Ebel</option>
-  <option value="Jonelle Williams">Jonelle Williams</option>
-</select>
+<input type="hidden" id="teacherName" value="">
 <label>Your Class</label>
 <select id="className" style="width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px" onchange="setTeacher(this)">
 <option value="">-- Select your class --</option>
@@ -132,17 +112,17 @@
 <p>"<strong>How about $35?</strong>" I offered. He shook his head. "<strong>I can't go that low</strong>. The lowest I can go is $40."</p>
 <p>"<strong>It's a deal!</strong>" I said, and we shook hands. I was happy - I saved $10 by bargaining!</p>
 </div>
-<div class="question"><h4>1. How much did the seller originally want?</h4>
+<div class="question" data-c="b"><h4>1. How much did the seller originally want?</h4>
 <div class="option" onclick="sel(this)" data-v="a"><div class="circle"></div>$35</div>
 <div class="option" onclick="sel(this)" data-v="b"><div class="circle"></div>$50</div>
 <div class="option" onclick="sel(this)" data-v="c"><div class="circle"></div>$40</div>
 </div>
-<div class="question"><h4>2. How much did the buyer finally pay?</h4>
+<div class="question" data-c="c"><h4>2. How much did the buyer finally pay?</h4>
 <div class="option" onclick="sel(this)" data-v="a"><div class="circle"></div>$35</div>
 <div class="option" onclick="sel(this)" data-v="b"><div class="circle"></div>$45</div>
 <div class="option" onclick="sel(this)" data-v="c"><div class="circle"></div>$40</div>
 </div>
-<div class="question"><h4>3. How much did the buyer save?</h4>
+<div class="question" data-c="b"><h4>3. How much did the buyer save?</h4>
 <div class="option" onclick="sel(this)" data-v="a"><div class="circle"></div>$5</div>
 <div class="option" onclick="sel(this)" data-v="b"><div class="circle"></div>$10</div>
 <div class="option" onclick="sel(this)" data-v="c"><div class="circle"></div>$15</div>
@@ -219,7 +199,6 @@
 <label style="font-weight:400"><input class="s-check" type="checkbox"> I made an offer or asked for a lower price</label><br>
 <label style="font-weight:400"><input class="s-check" type="checkbox"> I talked about the final price or decision</label>
 </div>
-<div id="transcript" class="feedback" style="margin-top:12px">Your transcript will appear here...</div>
 <audio id="audio" controls class="hidden"></audio>
 <div id="sFeedback" class="feedback hidden"></div>
 <button class="btn" id="sBtn" onclick="checkSpeaking()">Continue →</button>
@@ -275,13 +254,11 @@
 </div>
 
 <div class="section" id="results">
-<!-- NOT SUBMITTED WARNING - Shows until submitted -->
 <div class="not-submitted-warning" id="notSubmittedWarning">
 <h3>⚠️ NOT SUBMITTED YET!</h3>
 <p>Your homework is complete but NOT sent to your teacher. Click the green button below to send it!</p>
 </div>
 
-<!-- SUCCESS MESSAGE - Hidden until submitted -->
 <div class="submitted-success hidden" id="submittedSuccess">
 <h3>✅ SUBMITTED SUCCESSFULLY!</h3>
 <p>Your homework has been sent to your teacher. Great job!</p>
@@ -299,37 +276,43 @@
 <div><label>Grammar</label><span id="scG">0/8</span></div>
 </div>
 
-<!-- BIG SUBMIT BUTTON -->
 <button class="btn-submit-big" id="submitBtn" onclick="submitToTeacher()">
 📤 SUBMIT TO TEACHER
 </button>
 
 </div>
-<div style="text-align:center;margin-top:20px"><button class="btn" style="background:#fff;color:#5B5091" onclick="location.reload()">Try Again</button></div>
 </div>
 </div>
 
-<script>function updateClasses(){
-  // Teacher dropdown changed - class dropdown already has all options via optgroups
-}
+<script>
 function setTeacher(sel){
   var opt=sel.options[sel.selectedIndex];
   var th=document.getElementById('teacherName');
-  if(th&&opt)th.value=opt.getAttribute('data-teacher')||th.value;
+  if(th)th.value=opt?(opt.getAttribute('data-teacher')||''):'';
 }
-let name='',scores={l:0,v:0,w:0,s:0,g:0},writingText='',spokenText='',speakingTranscript='',finalTranscript='';
+let name='',scores={l:0,v:0,w:0,s:0,g:0},writingText='',spokenText='',speakingTranscript='';
 let selectedWord=null,isRec=false,recTime=0,recTimer=null,recognition=null;
+let submitted=false;
 
 function startQuiz(){
   name=document.getElementById('studentName')?document.getElementById('studentName').value.trim():'';
   if(!name){alert('Please enter your name');return;}
   var cls=document.getElementById('className');
   if(!cls||!cls.value){alert('Please select your class');return;}
+  setTeacher(cls);
   showSection('s1');
 }
 
 function sel(el){el.parentElement.querySelectorAll('.option').forEach(function(o){o.classList.remove('selected');});el.classList.add('selected');}
-function checkS1(){var c=0;document.querySelectorAll('#s1 .question').forEach(function(q){if(q.querySelector('.option.selected'))c++;});scores.l=c;showSection('s2');}
+function checkS1(){
+  var c=0;
+  document.querySelectorAll('#s1 .question').forEach(function(q){
+    var s=q.querySelector('.option.selected');
+    if(s && s.dataset.v===q.dataset.c) c++;
+  });
+  scores.l=c;
+  showSection('s2');
+}
 function pickWord(el){document.querySelectorAll('.word').forEach(function(w){w.classList.remove('selected');});el.classList.add('selected');selectedWord=el;}
 function dropWord(target){if(!selectedWord||target.classList.contains('filled'))return;target.textContent=selectedWord.textContent;target.classList.add('filled');selectedWord.classList.add('used');selectedWord.classList.remove('selected');selectedWord=null;}
 function checkS2(){
@@ -363,16 +346,16 @@ function startRec(){
   },1000);
   recognition=new SR();
   recognition.continuous=false;
-  recognition.interimResults=false;
+  recognition.interimResults=true;
   recognition.lang='en-US';
   recognition.onresult=function(e){
+    var interim='';
     for(var i=e.resultIndex;i<e.results.length;i++){
-      if(e.results[i].isFinal){spokenText+=e.results[i][0].transcript+' ';}
+      if(e.results[i].isFinal)spokenText+=e.results[i][0].transcript+' ';
+      else interim+=e.results[i][0].transcript;
     }
     var b=document.getElementById('transcriptBox');
-    if(b){b.textContent=spokenText.trim();b.style.display='block';b.style.visibility='visible';}
-    var t=document.getElementById('transcript');
-    if(t){t.textContent=spokenText.trim();t.style.display='block';}
+    if(b){b.textContent='Transcript: '+(spokenText+interim).trim();b.style.display='block';b.style.visibility='visible';}
   };
   recognition.onerror=function(e){console.log('SR error:',e.error);};
   recognition.onend=function(){if(isRec){try{recognition.start();}catch(err){}}};
@@ -384,9 +367,12 @@ function stopRec(){
   document.getElementById('recBtn').classList.remove('recording');
   document.getElementById('recStatus').textContent='Recording saved!';
   var sb=document.getElementById('sBtn');if(sb)sb.disabled=false;
+  var b=document.getElementById('transcriptBox');
+  if(b && !spokenText.trim()){b.textContent='No transcript captured. Try again.';b.style.display='block';}
 }
 function checkSpeaking(){
   const text=(spokenText||speakingTranscript||'').toLowerCase();
+  speakingTranscript=spokenText||speakingTranscript;
   const grammarWords=['best price','how about','could do','deal','lowest','too expensive',"can't go that low"];
   const lessonWords=['price','dollar','buy','seller','buyer','market','deal','offer','expensive'];
   const grammarHits=grammarWords.filter(v=>text.includes(v)).length;
@@ -397,13 +383,15 @@ function checkSpeaking(){
   if(vocabHits>=2) score+=6; else if(vocabHits>=1) score+=3;
   score+=Math.min(6, checklist*2);
   scores.s=Math.min(20,score);
-  document.getElementById('sFeedback').innerHTML='<b>Transcript:</b> '+(spokenText||speakingTranscript||'Not captured')+'<br><b>Bargaining expressions found:</b> '+grammarHits+'<br><b>Lesson vocabulary found:</b> '+vocabHits+'<br><b>Checklist points:</b> '+(checklist*2)+'/6<br><b>Score:</b> '+scores.s+'/20';
+  document.getElementById('sFeedback').innerHTML='<b>Transcript:</b> '+(speakingTranscript||'Not captured')+'<br><b>Bargaining expressions found:</b> '+grammarHits+'<br><b>Lesson vocabulary found:</b> '+vocabHits+'<br><b>Checklist points:</b> '+(checklist*2)+'/6<br><b>Score:</b> '+scores.s+'/20';
   document.getElementById('sFeedback').classList.remove('hidden');
   showSection('s5');
 }
 function submitFinal(){let correct=0;document.querySelectorAll('#s5 .question').forEach(q=>{const sel=q.querySelector('.option.selected');const ans=q.dataset.c;if(sel){if(sel.dataset.v===ans){correct++;sel.classList.add('correct');}else{sel.classList.add('incorrect');q.querySelector('[data-v="'+ans+'"]').classList.add('correct');}}});scores.g=correct;const total=scores.l+scores.v+scores.w+scores.s+scores.g;const pct=Math.round(total/57*100);document.getElementById('finalPct').textContent=pct+'%';document.getElementById('studentDisplay').textContent=name;document.getElementById('scL').textContent=scores.l+'/3';document.getElementById('scV').textContent=scores.v+'/6';document.getElementById('scW').textContent=scores.w+'/20';document.getElementById('scS').textContent=scores.s+'/20';document.getElementById('scG').textContent=scores.g+'/8';showSection('results');}
 
 function submitToTeacher(){
+  if(submitted)return;
+  submitted=true;
   const btn=document.getElementById('submitBtn');
   if(btn){btn.disabled=true;btn.textContent='Submitting...';}
   const pct=Math.round((scores.l+scores.v+scores.w+scores.s+scores.g)/57*100);
@@ -418,14 +406,27 @@ function submitToTeacher(){
   formData.append('entry.1998281944',scores.g+'/8');
   formData.append('entry.1207114914',pct+'%');
   formData.append('entry.939912807',writingText||'');
-  formData.append('entry.2086302086',spokenText||'No transcript captured');
-  fetch('https://docs.google.com/forms/d/e/1FAIpQLSf9uEs5MqWLveyoaMBxeWx3pW1b90siwgaom766CpwqnOI7Dg/formResponse',{method:'POST',mode:'no-cors',body:formData}).catch(function(){});
-  if(btn){btn.textContent='Submitted ✓';btn.style.background='#22c55e';}
-  const status=document.getElementById('submitStatus');
-  if(status){status.innerHTML='✅ <strong>Homework submitted successfully!</strong><br><span style="font-size:0.9em;color:#555">Your teacher has received your work.</span><br><br><button onclick="location.reload()" style="margin-top:8px;padding:10px 20px;background:#5B5091;color:#fff;border:none;border-radius:10px;font-size:15px;cursor:pointer;font-family:inherit">🔄 Retake Homework</button>';status.style.display='block';}
+  formData.append('entry.2086302086',speakingTranscript||spokenText||'No transcript captured');
+  function showSuccess(){
+    if(btn){btn.textContent='Submitted ✓';btn.style.background='#22c55e';btn.disabled=true;}
+    var warn=document.getElementById('notSubmittedWarning');
+    if(warn)warn.classList.add('hidden');
+    var ok=document.getElementById('submittedSuccess');
+    if(ok)ok.classList.remove('hidden');
+  }
+  function showFailure(){
+    submitted=false;
+    if(btn){btn.disabled=false;btn.textContent='Failed - Tap to Retry';btn.style.background='#ef4444';}
+    var warn=document.getElementById('notSubmittedWarning');
+    if(warn){warn.querySelector('h3').textContent='⚠️ SUBMISSION FAILED';warn.querySelector('p').textContent='Check your internet connection and tap the button again.';}
+  }
+  // 6s timeout fallback for mobile (no-cors never errors on success)
+  var done=false;
+  var timeoutId=setTimeout(function(){if(!done){done=true;showSuccess();}},6000);
+  fetch('https://docs.google.com/forms/d/e/1FAIpQLSf9uEs5MqWLveyoaMBxeWx3pW1b90siwgaom766CpwqnOI7Dg/formResponse',{method:'POST',mode:'no-cors',body:formData})
+  .then(function(){if(done)return;done=true;clearTimeout(timeoutId);showSuccess();})
+  .catch(function(){if(done)return;done=true;clearTimeout(timeoutId);showFailure();});
 }
-
-
 </script>
 </body>
 </html>
